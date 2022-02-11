@@ -1,1 +1,1 @@
-# The default keymap for reviung41
+# Creator's keymap for the Edinburgh41
