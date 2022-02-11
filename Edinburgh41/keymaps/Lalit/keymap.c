@@ -39,21 +39,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                             KC_LCTL,   KC_LSFT,    KC_NO,   KC_SPC,    LOWER
   ),
   
-  [_LOWER] = LAYOUT_reviung41(
+  [_LOWER] = LAYOUT_edinburgh41(
     _______,  KC_TRNS,  KC_LBRC,    KC_RBRC,  KC_VOLD,    KC_VOLU,            KC_TRNS,  RGUI(KC_E),  KC_MINUS,  KC_KP_PLUS,  KC_TRNS,  RGUI(LSFT(KC_S)),
     _______,  KC_1,  KC_2,  KC_3,  KC_4,   KC_5,            KC_6,  KC_7,  KC_8,    KC_9,  KC_0,   KC_DEL,
     _______,  KC_TRNS,   LSFT(KC_LBRC),  LSFT(KC_RBRC),  KC_TRNS,   KC_TRNS,            TMB_MODE,  KC_EQUAL,   LSFT(KC_SCLN),  KC_TRNS,  KC_TRNS,  KC_TRNS,
                                             KC_LCTL,   KC_LSFT,  RESET,   _______,  KC_RGUI
   ),
   
-  [_RAISE] = LAYOUT_reviung41(
+  [_RAISE] = LAYOUT_edinburgh41(
     _______,  KC_1,     KC_2,     KC_3,     KC_4,      KC_5,               KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_DEL,
     _______,  KC_MINS,  KC_EQL,   KC_LBRC,  KC_RBRC,   KC_BSLS,            KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,
     _______,  KC_ESC,   KC_RGUI,  KC_RALT,  KC_CAPS,   KC_QUOT,            KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,
                                             _______,   _______,  KC_BSPC,  _______,  _______
   ),
   
-  [_ADJUST] = LAYOUT_reviung41(
+  [_ADJUST] = LAYOUT_edinburgh41(
     RGB_VAI,   RGB_SAI, RGB_HUI,  RGB_MOD,  XXXXXXX,   RGB_TOG,            XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
     RGB_VAD,   RGB_SAD, RGB_HUD,  RGB_RMOD, XXXXXXX,   XXXXXXX,            XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
     XXXXXXX,   XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,   XXXXXXX,            RESET,    XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
