@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID 0xDCCB
 #define DEVICE_VER 0x0001
 #define MANUFACTURER gtips
-#define PRODUCT reviung41
-#define DESCRIPTION A 41-key keyboard
+#define PRODUCT Edinburgh41
+#define DESCRIPTION A 41-key keyboard with joystick
 
 #define BOOTMAGIC_LITE_ROW 2
 #define BOOTMAGIC_LITE_COLUMN 5
