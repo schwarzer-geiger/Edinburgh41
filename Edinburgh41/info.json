@@ -1,11 +1,11 @@
 {
-    "keyboard_name": "reviung39",
+    "keyboard_name": "edinburgh41",
     "url": "",
     "maintainer": "gtips",
     "width": 13,
     "height": 4.54,
     "layouts": {
-        "LAYOUT_reviung41": {
+        "LAYOUT_edinburgh41": {
             "key_count": 41,
             "layout": [
                 {"label":"K00", "x":0, "y":0.54},
