@@ -1,6 +1,6 @@
 # edinburgh41
 
-![edinburgh41](imgur.com image replace me!)
+![edinburgh41](imgur.com image replace me!) Still looking for a nice photo, send me one:)
 
 *A short description of the keyboard/project*
 
@@ -22,7 +22,7 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader in 2 ways:
 
 * **Bootmagic reset**: Hold down the key at (0,0) in the matrix (the top left key) and plug in the keyboard
 * **Keycode in layout**: Press the key mapped to `RESET` if it is available
