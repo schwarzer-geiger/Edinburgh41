@@ -66,7 +66,8 @@ Now, touching pad and socket leg with the iron apply some solder so that the pad
 https://youtu.be/7WQaMCnWPGA
 
 ### 3.3 MCU Test
-Before touching the MCU, touch a large metal object or water tap/radiator to prevent static discharge. Then unpack the MCU (probably a pro micro/equivalent) and hook it up to your computer. Assuming you have QMK Toolbox installed (otherwise, do so: https://github.com/qmk/qmk_toolbox), select a random keymap from the drop down menu, set the MCU into bootloader mode by connecting the GND and RST pins once or twice quickly in succession with e.g. solder wire and hit "flash". If everything works fine, great! You can continue. If not, don't continue and try to fix that first (this is a bit beyond this guide).
+This step is done for two reasons. First, we want to ensure that the MCU is working before permanently soldering it onto the PCB. Second, the GND and RST pins are impossible to access after the case has been screwed together. To avoid the hassle of opening up the case everytime we flash a new keymap, this step flashes a keymap which has bootmagic enabled allowing you to access the bootloader by pressing keys.
+Before touching the MCU, touch a large metal object or water tap/radiator to prevent static discharge. Then unpack the MCU (probably a pro micro/equivalent) and hook it up to your computer. Download the edinburgh41.hex file from this repository. Assuming you have QMK Toolbox installed (otherwise, do so: https://github.com/qmk/qmk_toolbox), select the downloaded edinburgh41.hex file from the drop-down menu labeled "local file", set the MCU into bootloader mode by connecting the GND and RST pins once or twice quickly in succession with e.g. solder wire and hit "flash" as soon as QMK Toolbox reports that your MCU is in bootloader mode (a yellow command line output). If everything works fine, great! You can continue. If not, don't continue and try to fix that first (this is a bit beyond this guide).
 
 ### 3.4 MCU Soldering
 If you've successfully flashed the MCU, turn your PCB around so that the soldered components now face downwards. Put the PCB onto a small box or so as shown in the picture.
@@ -146,11 +147,12 @@ lalitmistry1407@gmail.com
 
 ## 6. QMK Setup
 Now head to your computer. Setup QMK: https://docs.qmk.fm/#/newbs_getting_started.
-Navigate to your qmk_firmware folder (should be in the user directory), and look in the "keyboards" folder for "Edinburgh41". You can find instructions in the "readme.txt" there for tweaking your firmware.
+Navigate to your qmk_firmware folder (should be in the user directory), and look in the "keyboards" folder for "edinburgh41". If you cannot locate a folder with this name in there, then the pull request was not yet accepted. In this case, head to the Edinburgh41 github and manually download, unzip and copy the "edinburgh41" folder into your qmk_firmware folder. Infos on how to tweak your firmware can be found in the readme.md of the edinburgh41 folder, or just open the thumbstick.h, config.h and rules.mk file in your favourite editor and familiarise yourself with the different parameters.
+The goto reference for how QMK works in general can be found at https://docs.qmk.fm/#/.
 
 I hope you enjoyed this build and that this board serves you long and well:)
 
-
+I'm happy to help if you're unsure with anything, shoot me an email:) lalitmistry1407@gmail.com
 
 
 
